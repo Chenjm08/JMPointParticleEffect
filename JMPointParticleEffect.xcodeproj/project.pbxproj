@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		997D3EBD192722C1005EFC5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EBC192722C1005EFC5E /* Foundation.framework */; };
+		997D3EBF192722C1005EFC5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EBE192722C1005EFC5E /* CoreGraphics.framework */; };
+		997D3EC1192722C1005EFC5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EC0192722C1005EFC5E /* UIKit.framework */; };
+		997D3EC7192722C1005EFC5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 997D3EC5192722C1005EFC5E /* InfoPlist.strings */; };
+		997D3EC9192722C1005EFC5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3EC8192722C1005EFC5E /* main.m */; };
+		997D3ECD192722C1005EFC5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3ECC192722C1005EFC5E /* AppDelegate.m */; };
+		997D3ED0192722C1005EFC5E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997D3ECE192722C1005EFC5E /* Main_iPhone.storyboard */; };
+		997D3ED3192722C1005EFC5E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997D3ED1192722C1005EFC5E /* Main_iPad.storyboard */; };
+		997D3ED6192722C1005EFC5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3ED5192722C1005EFC5E /* ViewController.m */; };
+		997D3ED8192722C1005EFC5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997D3ED7192722C1005EFC5E /* Images.xcassets */; };
+		997D3EDF192722C2005EFC5E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EDE192722C2005EFC5E /* XCTest.framework */; };
+		997D3EE0192722C2005EFC5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EBC192722C1005EFC5E /* Foundation.framework */; };
+		997D3EE1192722C2005EFC5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EC0192722C1005EFC5E /* UIKit.framework */; };
+		997D3EE9192722C2005EFC5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 997D3EE7192722C2005EFC5E /* InfoPlist.strings */; };
+		997D3EEB192722C2005EFC5E /* JMPointParticleEffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3EEA192722C2005EFC5E /* JMPointParticleEffectTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		997D3EE2192722C2005EFC5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 997D3EB1192722C1005EFC5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997D3EB8192722C1005EFC5E;
+			remoteInfo = JMPointParticleEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		997D3EB9192722C1005EFC5E /* JMPointParticleEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMPointParticleEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		997D3EBC192722C1005EFC5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		997D3EBE192722C1005EFC5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		997D3EC0192722C1005EFC5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		997D3EC4192722C1005EFC5E /* JMPointParticleEffect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMPointParticleEffect-Info.plist"; sourceTree = "<group>"; };
+		997D3EC6192722C1005EFC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		997D3EC8192722C1005EFC5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		997D3ECA192722C1005EFC5E /* JMPointParticleEffect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JMPointParticleEffect-Prefix.pch"; sourceTree = "<group>"; };
+		997D3ECB192722C1005EFC5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		997D3ECC192722C1005EFC5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		997D3ECF192722C1005EFC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		997D3ED2192722C1005EFC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		997D3ED4192722C1005EFC5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		997D3ED5192722C1005EFC5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		997D3ED7192722C1005EFC5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		997D3EDD192722C2005EFC5E /* JMPointParticleEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMPointParticleEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		997D3EDE192722C2005EFC5E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		997D3EE6192722C2005EFC5E /* JMPointParticleEffectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMPointParticleEffectTests-Info.plist"; sourceTree = "<group>"; };
+		997D3EE8192722C2005EFC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		997D3EEA192722C2005EFC5E /* JMPointParticleEffectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMPointParticleEffectTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		997D3EB6192722C1005EFC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997D3EBF192722C1005EFC5E /* CoreGraphics.framework in Frameworks */,
+				997D3EC1192722C1005EFC5E /* UIKit.framework in Frameworks */,
+				997D3EBD192722C1005EFC5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997D3EDA192722C2005EFC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997D3EDF192722C2005EFC5E /* XCTest.framework in Frameworks */,
+				997D3EE1192722C2005EFC5E /* UIKit.framework in Frameworks */,
+				997D3EE0192722C2005EFC5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		997D3EB0192722C1005EFC5E = {
+			isa = PBXGroup;
+			children = (
+				997D3EC2192722C1005EFC5E /* JMPointParticleEffect */,
+				997D3EE4192722C2005EFC5E /* JMPointParticleEffectTests */,
+				997D3EBB192722C1005EFC5E /* Frameworks */,
+				997D3EBA192722C1005EFC5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		997D3EBA192722C1005EFC5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EB9192722C1005EFC5E /* JMPointParticleEffect.app */,
+				997D3EDD192722C2005EFC5E /* JMPointParticleEffectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		997D3EBB192722C1005EFC5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EBC192722C1005EFC5E /* Foundation.framework */,
+				997D3EBE192722C1005EFC5E /* CoreGraphics.framework */,
+				997D3EC0192722C1005EFC5E /* UIKit.framework */,
+				997D3EDE192722C2005EFC5E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		997D3EC2192722C1005EFC5E /* JMPointParticleEffect */ = {
+			isa = PBXGroup;
+			children = (
+				997D3ECB192722C1005EFC5E /* AppDelegate.h */,
+				997D3ECC192722C1005EFC5E /* AppDelegate.m */,
+				997D3ECE192722C1005EFC5E /* Main_iPhone.storyboard */,
+				997D3ED1192722C1005EFC5E /* Main_iPad.storyboard */,
+				997D3ED4192722C1005EFC5E /* ViewController.h */,
+				997D3ED5192722C1005EFC5E /* ViewController.m */,
+				997D3ED7192722C1005EFC5E /* Images.xcassets */,
+				997D3EC3192722C1005EFC5E /* Supporting Files */,
+			);
+			path = JMPointParticleEffect;
+			sourceTree = "<group>";
+		};
+		997D3EC3192722C1005EFC5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EC4192722C1005EFC5E /* JMPointParticleEffect-Info.plist */,
+				997D3EC5192722C1005EFC5E /* InfoPlist.strings */,
+				997D3EC8192722C1005EFC5E /* main.m */,
+				997D3ECA192722C1005EFC5E /* JMPointParticleEffect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		997D3EE4192722C2005EFC5E /* JMPointParticleEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EEA192722C2005EFC5E /* JMPointParticleEffectTests.m */,
+				997D3EE5192722C2005EFC5E /* Supporting Files */,
+			);
+			path = JMPointParticleEffectTests;
+			sourceTree = "<group>";
+		};
+		997D3EE5192722C2005EFC5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EE6192722C2005EFC5E /* JMPointParticleEffectTests-Info.plist */,
+				997D3EE7192722C2005EFC5E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		997D3EB8192722C1005EFC5E /* JMPointParticleEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997D3EEE192722C2005EFC5E /* Build configuration list for PBXNativeTarget "JMPointParticleEffect" */;
+			buildPhases = (
+				997D3EB5192722C1005EFC5E /* Sources */,
+				997D3EB6192722C1005EFC5E /* Frameworks */,
+				997D3EB7192722C1005EFC5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMPointParticleEffect;
+			productName = JMPointParticleEffect;
+			productReference = 997D3EB9192722C1005EFC5E /* JMPointParticleEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		997D3EDC192722C2005EFC5E /* JMPointParticleEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997D3EF1192722C2005EFC5E /* Build configuration list for PBXNativeTarget "JMPointParticleEffectTests" */;
+			buildPhases = (
+				997D3ED9192722C2005EFC5E /* Sources */,
+				997D3EDA192722C2005EFC5E /* Frameworks */,
+				997D3EDB192722C2005EFC5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				997D3EE3192722C2005EFC5E /* PBXTargetDependency */,
+			);
+			name = JMPointParticleEffectTests;
+			productName = JMPointParticleEffectTests;
+			productReference = 997D3EDD192722C2005EFC5E /* JMPointParticleEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		997D3EB1192722C1005EFC5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					997D3EDC192722C2005EFC5E = {
+						TestTargetID = 997D3EB8192722C1005EFC5E;
+					};
+				};
+			};
+			buildConfigurationList = 997D3EB4192722C1005EFC5E /* Build configuration list for PBXProject "JMPointParticleEffect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 997D3EB0192722C1005EFC5E;
+			productRefGroup = 997D3EBA192722C1005EFC5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				997D3EB8192722C1005EFC5E /* JMPointParticleEffect */,
+				997D3EDC192722C2005EFC5E /* JMPointParticleEffectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		997D3EB7192722C1005EFC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997D3ED3192722C1005EFC5E /* Main_iPad.storyboard in Resources */,
+				997D3ED8192722C1005EFC5E /* Images.xcassets in Resources */,
+				997D3ED0192722C1005EFC5E /* Main_iPhone.storyboard in Resources */,
+				997D3EC7192722C1005EFC5E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997D3EDB192722C2005EFC5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997D3EE9192722C2005EFC5E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		997D3EB5192722C1005EFC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997D3ED6192722C1005EFC5E /* ViewController.m in Sources */,
+				997D3ECD192722C1005EFC5E /* AppDelegate.m in Sources */,
+				997D3EC9192722C1005EFC5E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997D3ED9192722C2005EFC5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997D3EEB192722C2005EFC5E /* JMPointParticleEffectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		997D3EE3192722C2005EFC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 997D3EB8192722C1005EFC5E /* JMPointParticleEffect */;
+			targetProxy = 997D3EE2192722C2005EFC5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		997D3EC5192722C1005EFC5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997D3EC6192722C1005EFC5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		997D3ECE192722C1005EFC5E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997D3ECF192722C1005EFC5E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		997D3ED1192722C1005EFC5E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997D3ED2192722C1005EFC5E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		997D3EE7192722C2005EFC5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997D3EE8192722C2005EFC5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		997D3EEC192722C2005EFC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		997D3EED192722C2005EFC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		997D3EEF192722C2005EFC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMPointParticleEffect/JMPointParticleEffect-Prefix.pch";
+				INFOPLIST_FILE = "JMPointParticleEffect/JMPointParticleEffect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		997D3EF0192722C2005EFC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMPointParticleEffect/JMPointParticleEffect-Prefix.pch";
+				INFOPLIST_FILE = "JMPointParticleEffect/JMPointParticleEffect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		997D3EF2192722C2005EFC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JMPointParticleEffect.app/JMPointParticleEffect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMPointParticleEffect/JMPointParticleEffect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JMPointParticleEffectTests/JMPointParticleEffectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		997D3EF3192722C2005EFC5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JMPointParticleEffect.app/JMPointParticleEffect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMPointParticleEffect/JMPointParticleEffect-Prefix.pch";
+				INFOPLIST_FILE = "JMPointParticleEffectTests/JMPointParticleEffectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		997D3EB4192722C1005EFC5E /* Build configuration list for PBXProject "JMPointParticleEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997D3EEC192722C2005EFC5E /* Debug */,
+				997D3EED192722C2005EFC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		997D3EEE192722C2005EFC5E /* Build configuration list for PBXNativeTarget "JMPointParticleEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997D3EEF192722C2005EFC5E /* Debug */,
+				997D3EF0192722C2005EFC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		997D3EF1192722C2005EFC5E /* Build configuration list for PBXNativeTarget "JMPointParticleEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997D3EF2192722C2005EFC5E /* Debug */,
+				997D3EF3192722C2005EFC5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 997D3EB1192722C1005EFC5E /* Project object */;
+}
