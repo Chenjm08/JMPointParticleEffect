@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JMPointParticleEffectViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    JMPointParticleEffectViewController *pointParticleEffectViewController = [[JMPointParticleEffectViewController alloc] init];
+    [self.view addSubview:pointParticleEffectViewController.view];
 }
 
 - (void)didReceiveMemoryWarning

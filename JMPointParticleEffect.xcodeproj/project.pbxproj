@@ -22,6 +22,18 @@
 		997D3EE1192722C2005EFC5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3EC0192722C1005EFC5E /* UIKit.framework */; };
 		997D3EE9192722C2005EFC5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 997D3EE7192722C2005EFC5E /* InfoPlist.strings */; };
 		997D3EEB192722C2005EFC5E /* JMPointParticleEffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3EEA192722C2005EFC5E /* JMPointParticleEffectTests.m */; };
+		997D3F0219272318005EFC5E /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3EF619272318005EFC5E /* AGLKContext.m */; };
+		997D3F0319272318005EFC5E /* AGLKPointParticleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3EF819272318005EFC5E /* AGLKPointParticleEffect.m */; };
+		997D3F0419272318005EFC5E /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3EFA19272318005EFC5E /* AGLKVertexAttribArrayBuffer.m */; };
+		997D3F0519272318005EFC5E /* AGLKPointParticleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 997D3EFC19272318005EFC5E /* AGLKPointParticleShader.fsh */; };
+		997D3F0619272318005EFC5E /* AGLKPointParticleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 997D3EFD19272318005EFC5E /* AGLKPointParticleShader.vsh */; };
+		997D3F0D1927238A005EFC5E /* JMPointParticleEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997D3F0C1927238A005EFC5E /* JMPointParticleEffectViewController.m */; };
+		997D3F1219272A8B005EFC5E /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 997D3F0F19272A8B005EFC5E /* ball.png */; };
+		997D3F1319272A8B005EFC5E /* burst.png in Resources */ = {isa = PBXBuildFile; fileRef = 997D3F1019272A8B005EFC5E /* burst.png */; };
+		997D3F1419272A8B005EFC5E /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 997D3F1119272A8B005EFC5E /* smoke.png */; };
+		997D3F1619273EFE005EFC5E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3F1519273EFE005EFC5E /* OpenGLES.framework */; };
+		997D3F1819273F0F005EFC5E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3F1719273F0F005EFC5E /* GLKit.framework */; };
+		997D3F1A19273F25005EFC5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997D3F1919273F25005EFC5E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +67,22 @@
 		997D3EE6192722C2005EFC5E /* JMPointParticleEffectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMPointParticleEffectTests-Info.plist"; sourceTree = "<group>"; };
 		997D3EE8192722C2005EFC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		997D3EEA192722C2005EFC5E /* JMPointParticleEffectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMPointParticleEffectTests.m; sourceTree = "<group>"; };
+		997D3EF519272318005EFC5E /* AGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
+		997D3EF619272318005EFC5E /* AGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
+		997D3EF719272318005EFC5E /* AGLKPointParticleEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKPointParticleEffect.h; sourceTree = "<group>"; };
+		997D3EF819272318005EFC5E /* AGLKPointParticleEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKPointParticleEffect.m; sourceTree = "<group>"; };
+		997D3EF919272318005EFC5E /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		997D3EFA19272318005EFC5E /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		997D3EFC19272318005EFC5E /* AGLKPointParticleShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AGLKPointParticleShader.fsh; sourceTree = "<group>"; };
+		997D3EFD19272318005EFC5E /* AGLKPointParticleShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AGLKPointParticleShader.vsh; sourceTree = "<group>"; };
+		997D3F0B1927238A005EFC5E /* JMPointParticleEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPointParticleEffectViewController.h; sourceTree = "<group>"; };
+		997D3F0C1927238A005EFC5E /* JMPointParticleEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMPointParticleEffectViewController.m; sourceTree = "<group>"; };
+		997D3F0F19272A8B005EFC5E /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		997D3F1019272A8B005EFC5E /* burst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burst.png; sourceTree = "<group>"; };
+		997D3F1119272A8B005EFC5E /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		997D3F1519273EFE005EFC5E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		997D3F1719273F0F005EFC5E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		997D3F1919273F25005EFC5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997D3F1A19273F25005EFC5E /* QuartzCore.framework in Frameworks */,
+				997D3F1819273F0F005EFC5E /* GLKit.framework in Frameworks */,
+				997D3F1619273EFE005EFC5E /* OpenGLES.framework in Frameworks */,
 				997D3EBF192722C1005EFC5E /* CoreGraphics.framework in Frameworks */,
 				997D3EC1192722C1005EFC5E /* UIKit.framework in Frameworks */,
 				997D3EBD192722C1005EFC5E /* Foundation.framework in Frameworks */,
@@ -103,6 +134,9 @@
 		997D3EBB192722C1005EFC5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				997D3F1919273F25005EFC5E /* QuartzCore.framework */,
+				997D3F1719273F0F005EFC5E /* GLKit.framework */,
+				997D3F1519273EFE005EFC5E /* OpenGLES.framework */,
 				997D3EBC192722C1005EFC5E /* Foundation.framework */,
 				997D3EBE192722C1005EFC5E /* CoreGraphics.framework */,
 				997D3EC0192722C1005EFC5E /* UIKit.framework */,
@@ -114,12 +148,15 @@
 		997D3EC2192722C1005EFC5E /* JMPointParticleEffect */ = {
 			isa = PBXGroup;
 			children = (
+				997D3EF419272318005EFC5E /* GL */,
 				997D3ECB192722C1005EFC5E /* AppDelegate.h */,
 				997D3ECC192722C1005EFC5E /* AppDelegate.m */,
 				997D3ECE192722C1005EFC5E /* Main_iPhone.storyboard */,
 				997D3ED1192722C1005EFC5E /* Main_iPad.storyboard */,
 				997D3ED4192722C1005EFC5E /* ViewController.h */,
 				997D3ED5192722C1005EFC5E /* ViewController.m */,
+				997D3F0B1927238A005EFC5E /* JMPointParticleEffectViewController.h */,
+				997D3F0C1927238A005EFC5E /* JMPointParticleEffectViewController.m */,
 				997D3ED7192722C1005EFC5E /* Images.xcassets */,
 				997D3EC3192722C1005EFC5E /* Supporting Files */,
 			);
@@ -129,6 +166,7 @@
 		997D3EC3192722C1005EFC5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				997D3F0E19272A8B005EFC5E /* Image */,
 				997D3EC4192722C1005EFC5E /* JMPointParticleEffect-Info.plist */,
 				997D3EC5192722C1005EFC5E /* InfoPlist.strings */,
 				997D3EC8192722C1005EFC5E /* main.m */,
@@ -154,6 +192,39 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		997D3EF419272318005EFC5E /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EF519272318005EFC5E /* AGLKContext.h */,
+				997D3EF619272318005EFC5E /* AGLKContext.m */,
+				997D3EF719272318005EFC5E /* AGLKPointParticleEffect.h */,
+				997D3EF819272318005EFC5E /* AGLKPointParticleEffect.m */,
+				997D3EF919272318005EFC5E /* AGLKVertexAttribArrayBuffer.h */,
+				997D3EFA19272318005EFC5E /* AGLKVertexAttribArrayBuffer.m */,
+				997D3EFB19272318005EFC5E /* Shaders */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		997D3EFB19272318005EFC5E /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				997D3EFC19272318005EFC5E /* AGLKPointParticleShader.fsh */,
+				997D3EFD19272318005EFC5E /* AGLKPointParticleShader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		997D3F0E19272A8B005EFC5E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				997D3F0F19272A8B005EFC5E /* ball.png */,
+				997D3F1019272A8B005EFC5E /* burst.png */,
+				997D3F1119272A8B005EFC5E /* smoke.png */,
+			);
+			path = Image;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -231,9 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				997D3ED3192722C1005EFC5E /* Main_iPad.storyboard in Resources */,
+				997D3F1419272A8B005EFC5E /* smoke.png in Resources */,
 				997D3ED8192722C1005EFC5E /* Images.xcassets in Resources */,
 				997D3ED0192722C1005EFC5E /* Main_iPhone.storyboard in Resources */,
+				997D3F0519272318005EFC5E /* AGLKPointParticleShader.fsh in Resources */,
+				997D3F1319272A8B005EFC5E /* burst.png in Resources */,
+				997D3F0619272318005EFC5E /* AGLKPointParticleShader.vsh in Resources */,
 				997D3EC7192722C1005EFC5E /* InfoPlist.strings in Resources */,
+				997D3F1219272A8B005EFC5E /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997D3F0419272318005EFC5E /* AGLKVertexAttribArrayBuffer.m in Sources */,
+				997D3F0219272318005EFC5E /* AGLKContext.m in Sources */,
+				997D3F0D1927238A005EFC5E /* JMPointParticleEffectViewController.m in Sources */,
+				997D3F0319272318005EFC5E /* AGLKPointParticleEffect.m in Sources */,
 				997D3ED6192722C1005EFC5E /* ViewController.m in Sources */,
 				997D3ECD192722C1005EFC5E /* AppDelegate.m in Sources */,
 				997D3EC9192722C1005EFC5E /* main.m in Sources */,
