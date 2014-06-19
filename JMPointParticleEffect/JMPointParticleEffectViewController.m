@@ -26,6 +26,21 @@
         // Custom initialization
         self.view.backgroundColor = [UIColor whiteColor];
         
+        NSArray *topSegments = @[@"Ball", @"Burst", @"Smoke"];
+        NSArray *bottomSegments = @[@"Cannon", @"Billow", @"Pulse", @"FireRing"];
+        
+        UISegmentedControl *top = [[UISegmentedControl alloc] initWithItems:topSegments];
+        [self.view addSubview:top];
+        top.frame = CGRectMake(0, 0, 320, 50);
+        top.selectedSegmentIndex = 0;
+        [top addTarget:self action:@selector(selectedTexture:) forControlEvents:UIControlEventValueChanged];
+        
+        UISegmentedControl *bottom = [[UISegmentedControl alloc] initWithItems:bottomSegments];
+        [self.view addSubview:bottom];
+        bottom.selectedSegmentIndex = 0;
+        bottom.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height-50, 320, 50);
+        [bottom addTarget:self action:@selector(selectedEmitter:) forControlEvents:UIControlEventValueChanged];
+        
     }
     return self;
 }
@@ -145,10 +160,27 @@
                                    fadeDurationSeconds:0.5];
             
         }
-
     };
     
-    self.emitterBlocks = [NSArray arrayWithObjects: [cannonBall copy], [billow copy], [pulse copy], nil];
+    // 火圈
+    EmitterBlock FirRing = ^{
+        self.autoSpawnDelta = 3.2f;
+        self.particleEffect.gravity = GLKVector3Make(0.0f, 0.0f, 0.0f);
+        for (int i = 0; i < 100; i++) {
+            float randomXVecity = -0.5f + 1.0f * (float)random() / (float)RAND_MAX;
+            float randomYVecity = -0.5f + 1.0f * (float)random() / (float)RAND_MAX;
+            GLKVector3 velocity = GLKVector3Normalize(GLKVector3Make(randomXVecity, randomYVecity, 0.0f));
+            [self.particleEffect addParticleAtPosition:GLKVector3Make(0.0f, 0.0f, 0.0f)
+                                              velocity:velocity
+                                                 force:GLKVector3MultiplyScalar(velocity, -1.5f)
+                                                  size:4.0f
+                                       lifeSpanSeconds:3.2f
+                                   fadeDurationSeconds:0.1f];
+        }
+    };
+    
+    
+    self.emitterBlocks = [NSArray arrayWithObjects: cannonBall, billow, pulse,FirRing, nil];
 }
 
 //配置投影矩阵和视图矩阵
@@ -168,6 +200,7 @@
 {
     NSTimeInterval timeElapsed = self.timeSinceFirstResume;
     self.particleEffect.elapsedSeconds = timeElapsed;
+    
     
     if (self.autoSpawnDelta < (timeElapsed - self.lastSpawnTime)) {
         self.lastSpawnTime = timeElapsed;
@@ -204,13 +237,55 @@
 //选择发射器
 - (void)selectedEmitter:(UISegmentedControl *)sender
 {
-    
+    self.currentEmitterIndex = [sender selectedSegmentIndex];
 }
 
 //选择纹理
 - (void)selectedTexture:(UISegmentedControl *)sender
 {
-    
+    NSUInteger index = sender.selectedSegmentIndex;
+    switch (index) {
+        case 0:
+            self.particleEffect.texture2d0.name = self.ballParticleTexture.name;
+            self.particleEffect.texture2d0.target = self.ballParticleTexture.target;
+            break;
+        case 1:
+            self.particleEffect.texture2d0.name = self.burstParticleTexture.name;
+            self.particleEffect.texture2d0.target = self.burstParticleTexture.target;
+            break;
+        case 2:
+            self.particleEffect.texture2d0.name = self.smokeParticleTexture.name;
+            self.particleEffect.texture2d0.target = self.smokeParticleTexture.target;
+            break;
+            
+        default:
+            self.particleEffect.texture2d0.name = 0;
+            
+            break;
+    }
+}
+
+- (void)selectedTextureIndex:(int)index
+{
+    switch (index) {
+        case 0:
+            self.particleEffect.texture2d0.name = self.ballParticleTexture.name;
+            self.particleEffect.texture2d0.target = self.ballParticleTexture.target;
+            break;
+        case 1:
+            self.particleEffect.texture2d0.name = self.burstParticleTexture.name;
+            self.particleEffect.texture2d0.target = self.burstParticleTexture.target;
+            break;
+        case 2:
+            self.particleEffect.texture2d0.name = self.smokeParticleTexture.name;
+            self.particleEffect.texture2d0.target = self.smokeParticleTexture.target;
+            break;
+            
+        default:
+            self.particleEffect.texture2d0.name = 0;
+            
+            break;
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
